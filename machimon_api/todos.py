@@ -45,8 +45,6 @@ class TodoList(Resource):
 
         #args = parser.parse_args()
         rec_id = int(time.time()*1000000)
-#        todo_id = int(max(ITEMS.keys()).lstrip('todo')) + 1
-#        todo_id = 'todo%i' % todo_id
         ITEMS[rec_id] = data
         return ITEMS[rec_id], 201
 
